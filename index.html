@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN FORM</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+
+</head>
+<body>
+      <section class="head">
+    <form>
+        <h3>CUSTOMER LOGIN</h3>
+          
+        <br>
+            <br>
+            
+    <div class="subcls">
+        <i class="fa-sharp-duotone fa-solid fa-envelope"></i>
+        <input type="text"placeholder="Email ID" id="user" id="">
+        </div>
+        <div id="input-box">
+        <i class="fa-solid fa-lock"></i>
+        <input type="password"placeholder="Password" id="password"><img src="closeeye.png" id="eyeicon">
+        </div>
+    
+       <div class="a">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"><a href="#">Rememebr Me</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a id="forget"onclick="forget()">Forget Password ?</a></div>
+       &nbsp;<button  type="button" class="login"onclick="login()">LOGIN</button>
+       <p>Don't have an acount?<a href="Register.html">Register</a></p>
+            </form>
+            
+        </section>
+        <script src="index.js"></script> 
+        <script>
+            let eyeicon=document.getElementById("eyeicon");
+            let password=document.getElementById("password");
+            eyeicon.onclick=function(){
+                if(password.type=="password"){
+                  password.type="text";
+                   eyeicon.src="openeye.jpeg";
+                }else{
+                    password.type="password";
+                    eyeicon.src="closeeye.png";
+                }
+            }
+        </script>
+        <script>
+            const rmcheck=document  .getElementById('rememeberMe');
+            passinput=document.getElementById("passowrd");
+            emailinput=document.getElementById("email");
+        </script>
+        
+</body>
+</html>
